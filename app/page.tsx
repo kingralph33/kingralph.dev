@@ -1,7 +1,7 @@
+import { TwitterIcon } from 'components/icons';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './page.module.css';
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 	return (
@@ -28,6 +28,17 @@ export default function Home() {
 						/>
 					</a>
 				</div>
+			</div>
+
+			<div className={styles.center}>
+				<a
+					title='Link to my Twitter page'
+					rel='noopener noreferrer'
+					target='_blank'
+					href='https://twitter.com/KingRalph33'
+				>
+					<TwitterIcon />
+				</a>
 			</div>
 
 			<div className={styles.center}>
